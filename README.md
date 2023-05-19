@@ -1,5 +1,5 @@
 # aws-datawarehouse
-Modelando e criando um DW na nuvem AWS utilizando Terraform
+Criando um DW na nuvem AWS utilizando Terraform.
 
 ## Pré-requisitos
 * Uma conta na AWS
@@ -24,17 +24,8 @@ Modelando e criando um DW na nuvem AWS utilizando Terraform
 4. Execute `terraform apply`
 
 ## O que fazer na cloud
-O `load_data.sql` será usado para copiar os dados do bucket para o Redshift. Depois de criado a infra, vá ao IAM e copie o código *arn* do role criado e cole no `load_data.sql`.
-
-```
-
-COPY refined.dim_cliente
-FROM 's3://terraform-raw-dw-nuvem/dados/dim_cliente'
-IAM_ROLE 'SUBSTITUA O ARN DO ROLE AQUI'
-CSV;
-
-```
-
+* Substitua a linha IAM_ROLE do `load_data.sql` para o valor correto. (O código ARN do role criado - Vá em IAM -> Roles)
+* Abra o *query editor v2* do cluster *Redshift* e cole o código do `load_data.sql` lá dentro e execute.  
 
 <br>
 
