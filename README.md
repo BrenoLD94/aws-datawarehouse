@@ -27,7 +27,12 @@ Criando um DW na nuvem AWS utilizando Terraform.
 * Substitua a linha IAM_ROLE do `load_data.sql` para o valor correto. (O código ARN do role criado - Vá em IAM -> Roles)
 * Abra o *query editor v2* do cluster *Redshift* e cole o código do `load_data.sql` lá dentro e execute.  
 
+## Referências
+* Os dados foram pegos da [w3schools](https://www.w3schools.com/)
+
 <br>
 
-Obs) Por hora, toda lógica para converter os dados raw no modelo Star Schema não foram incluídos. <br>
-Obs2) Pretendo deixar essa arquitetura mais robusta usando ferramentas de ETL. (Isso não foi feito, pois foi meu primeiro contato com a AWS e preciso estudar mais) <br> :)
+**Obs**) Por hora, toda lógica para converter os dados raw no modelo Star Schema não foram incluídos. <br>
+**Obs2**) Pretendo deixar essa arquitetura mais robusta usando ferramentas de ETL tratando desde da Raw até o Redshift. (Isso não foi feito, pois foi meu primeiro contato com a AWS e preciso estudar mais) <br> :)
+
+
