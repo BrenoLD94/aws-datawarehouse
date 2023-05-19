@@ -10,6 +10,7 @@ Modelando e criando um DW na nuvem AWS utilizando Terraform
 * Cria VPC, Subnets
 * Cria Security Group, Tabela de rotas, Gateway
 * Cria Credencial Role para Redshift
+* Cria um Cluster Redshift
 * Cria um Bucket e faz upload de alguns arquivos CSV's
 
 ## Como fazer o deploy
