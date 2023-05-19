@@ -52,25 +52,25 @@ CREATE TABLE IF NOT EXISTS refined.fato_vendas (
 
 COPY refined.dim_cliente
 FROM 's3://terraform-raw-dw-nuvem/dados/dim_cliente'
-IAM_ROLE 'arn:aws:iam::285337151678:role/Redshift_S3_access_role'
+IAM_ROLE 'SUBSTITUA O ARN DO ROLE AQUI'
 CSV;
 
 COPY refined.dim_tempo
 FROM 's3://terraform-raw-dw-nuvem/dados/dim_tempo'
-IAM_ROLE 'arn:aws:iam::285337151678:role/Redshift_S3_access_role'
+IAM_ROLE 'SUBSTITUA O ARN DO ROLE AQUI'
 CSV;
 
 COPY refined.dim_funcionario
 FROM 's3://terraform-raw-dw-nuvem/dados/dim_funcionario'
-IAM_ROLE 'arn:aws:iam::285337151678:role/Redshift_S3_access_role'
+IAM_ROLE 'SUBSTITUA O ARN DO ROLE AQUI'
 CSV;
 
 COPY refined.dim_produto
 FROM 's3://terraform-raw-dw-nuvem/dados/dim_produto'
-IAM_ROLE 'arn:aws:iam::285337151678:role/Redshift_S3_access_role'
+IAM_ROLE 'SUBSTITUA O ARN DO ROLE AQUI'
 CSV;
 
 COPY refined.fato_vendas
 FROM 's3://terraform-raw-dw-nuvem/dados/fato_vendas'
-IAM_ROLE 'arn:aws:iam::285337151678:role/Redshift_S3_access_role'
+IAM_ROLE 'SUBSTITUA O ARN DO ROLE AQUI'
 CSV;
