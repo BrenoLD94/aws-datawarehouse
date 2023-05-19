@@ -1,9 +1,12 @@
 # Local .terraform directories
-**/.terraform/*
-
-# .tfstate files
-*.tfstate
-*.tfstate.*
+Terraform/.terraform/*
+Terraform/*.backup
+Terraform/*.hcl
+Terraform/*.tfvars
+Terraform/*.tfstate
+Terraform/*.out
+Terraform/*.info
+Terraform/*.log
 
 # Crash log files
 crash.log
@@ -20,6 +23,8 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+
+
 
 # Include override files you do wish to add to version control using negated pattern
 #
